@@ -1,0 +1,198 @@
+/*---- Générale ----*/
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One');
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+h1, h2, h3, h4, dt{
+font-family: "Rammetto One", Verdana, Geneva, Tahoma, sans-serif;
+    color: #132959;
+}
+
+/*---- Header ----*/
+#headPage{
+    align-items: center;
+    background-color: #fff;
+    border-bottom: solid 3px #132959;
+    display: flex;
+    justify-content: space-between;
+    height: 6em;
+    width: 100%;
+}
+
+#headPage>h1{
+    margin-left: 0.5em;
+    transition: 1s;
+}
+
+#headPage>h2{
+    position: relative;
+    left: 23%;
+}
+
+#headPage>img{
+    border-radius: 50%;
+    box-shadow: 0 0 2ex 1ex black;
+    margin: 1em 2em 0 0;;
+    width: 8%;
+}
+
+/*---- body generale ----*/
+#bodyPage{
+    display: flex;
+    height: 100%;
+    background-color: #EEEEC6;
+}
+
+/*---- section menu ----*/
+.sectMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    margin: 2em;
+}
+
+button{
+    border: solid 0.5px #132959;
+    border-radius: 3px;
+    color: #132959;
+    padding: 1ex;
+    height: 9em;
+    width: 9em;
+    font-family: "Rammetto One", Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0.5ex 0.5ex 0.8ex 0.2ex #555555;
+    margin: 0.5ex;
+    background-color: #fff;
+}
+
+button:hover{
+    color: #fff;
+    transition: 0.3s;
+    transform: scale(1.06);
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(1.0);
+    transition: 0.2s;
+}
+
+#btnXp:hover{
+    background-color: rgb(75, 181, 193);
+}
+
+#btnHob:hover{
+    background-color: rgb(185, 18, 27);
+}
+
+#btnPay:hover{
+    background-color: rgb(150, 202, 45);
+}
+
+#btnSpo:hover{
+    background-color: rgb(212, 0, 255);
+}
+
+/*---- section articles ----*/
+.sectArticles{
+    width: 80%;
+    height: 100%;
+}
+
+.titreRubrique{
+    position: absolute;
+    left: 48%;
+}
+
+.artDesign{
+    width: 60em;
+    height: 30em;
+    border-radius: 5px;
+    box-shadow: 0.2ex 0.3ex 0.7ex 0.1ex #555555;
+    margin-top: 5em;
+}
+
+article>h3{
+    text-align: center;
+}
+
+ul{
+    list-style-type: georgian ;
+}
+
+ol>li{
+    list-style-type: upper-roman;
+}
+
+li{
+    margin: 2em;
+}
+
+dd{
+    margin: 1em;
+}
+
+.centreArticle{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    padding-top: 2em;
+    padding-left: 0;
+    text-align: justify;
+}
+
+.artFalse{
+    position: absolute;
+    background-color: #fff;
+    
+}
+
+#artExperience{
+    position: absolute;
+    background-color: rgb(75, 181, 193);
+    visibility: hidden;
+}
+
+#artExperience>table>thead>tr{
+    font-family: "Rammetto One", Verdana, Geneva, Tahoma, sans-serif;
+    color: #132959;
+    text-align: center;
+}
+
+#artHobbies{
+    position: absolute;
+    background-color: rgb(185, 18, 27);
+    visibility: hidden;
+}
+
+
+#artPays{
+    position: absolute;
+    background-color: rgb(150, 202, 45);
+    visibility: hidden;
+}
+
+#artSport{
+    position: absolute;
+    background-color: rgb(212, 0, 255);
+    visibility: hidden;
+}
+
+/*---- footer ----*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    border-top: 3px solid #132959;
+}
+
+.logoDesign{
+    border-radius: 50%;
+    border: solid 3px #132959;
+    width: 80%;
+    height: 80%;
+}

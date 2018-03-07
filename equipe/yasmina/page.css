@@ -1,0 +1,124 @@
+html{
+    width: 100%;
+    height: 100%;     
+} 
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   width: 100%;
+   height: 100%; 
+   color: aliceblue;
+   
+}
+body>*{
+    background-color:transparent !important; 
+}
+.imgFond {
+    background-image: url("http://zyzixun.net/data/out/109/3761790-mauve-wallpapers.png");
+}
+
+#experiences table{
+    border-width:1px; 
+  border-style:solid; 
+  border-color:rgb(240, 237, 237);
+  width:50%;
+}
+#experiences td { 
+    border-width:1px;
+    border-style:solid; 
+    border-color:rgb(245, 239, 239);
+    width:50%;
+  }
+#entete{
+    display:flex;
+    justify-content: space-between;
+    height: 20%;
+    
+ }
+#photo img{
+    height:100%;
+}
+ #articles{
+    display: flex;
+   height: 30%;
+   justify-content: space-around; 
+   
+}
+
+ #listeMenu{
+    height:50% ;
+    
+ }
+
+#biographie  {
+    text-align: center;
+    
+    height: 80%;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 3ex;
+}
+
+#hobbies{
+    color: aliceblue;
+    padding:6em;
+    height: 100%;
+    line-height:100% ;
+    list-style: none;
+}
+#sports{
+    color: aliceblue;
+    padding:6em;
+    height: 100%;
+    line-height:100% ;
+}
+#pays{
+    color: aliceblue;
+    padding:6em;
+    height: 100%;
+    line-height:100% ;
+    
+}
+#experiences{
+    color: aliceblue;
+    padding:6em;
+    height: 100%;
+    line-height:100% ;
+}
+
+
+#nomPerso{ 
+      height: 100%;
+      line-height:100% ;
+      padding: 3em;
+    color: aliceblue;
+
+}
+
+#search{
+    height: 100%;
+      line-height:100% ;
+      padding:2ex;
+   
+    
+}  
+
+
+
+#menu ul{
+   display: flex;
+   list-style: none;
+   background-color:rgb(175, 175, 247);  
+}
+#menu a{
+    padding: 0.5ex;
+    border-radius: 5px;
+    background-color: aliceblue;
+    color: #555555;
+    
+}
+#nomPerso{
+    font-size: 2em;
+    
+}
+
+
+

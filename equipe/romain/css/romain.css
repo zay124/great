@@ -1,0 +1,171 @@
+@import url(../fonts/ANVIL.ttf);
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-image: url('../img/BG.jpg');
+    background-size: cover;
+    display:flex;
+}
+/* -------------------------------------------------------ATT--------------------------------------- */
+.logo{
+    position: absolute;
+    z-index: -1px;
+}
+/* --------------------------------------------------------OK--------------------------------------- */
+.base{
+    color:rgb(200,5,20);
+    font-size: 500%;
+    font-style: initial;
+    text-align: center;
+    margin-top: 0;
+    height: 1.25em;
+    width: 3em;
+    font-family:'Orbitron',sans-serif ;
+    transition: all 500ms;
+    list-style: none;
+}
+.base:hover{
+    border:red 5px solid;
+    border-radius: 10%;
+    background-color:rgba(0,0,0,0.5);
+}
+summary{
+    list-style-type: none;
+    transition: all 500ms;
+ }
+.experience{
+    width: 40%;
+    height: 40em;
+    margin-left: 0;
+    margin-top: 2em;
+    border:transparent 1em solid;
+    color: rgb(240,0,0);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: inherit;
+}
+/* --------------------------------------------------------JS--------------------------------------- */
+#o:hover{
+    border:red 5px solid;
+    border-radius: 10%;
+    background-color:rgba(0,0,0,0.5);
+}
+#m:hover{
+    border:red 5px solid;
+    border-radius: 10%;
+    background-color:rgba(0,0,0,0.5);
+}
+#a:hover{
+    border:red 5px solid;
+    border-radius: 10%;
+    background-color:rgba(0,0,0,0.5);
+}
+#i:hover{
+    border:red 5px solid;
+    border-radius: 10%;
+    background-color:rgba(0,0,0,0.5);;
+}
+#n:hover{
+    border:red 5px solid;
+    border-radius: 10%;
+    background-color:rgba(0,0,0,0.5);
+}
+/* --------------------------------------------------------OK--------------------------------------- */
+table{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border:1em rgba(139,0,0,0.5) solid;
+    border-radius: 5%;  
+}
+table th{
+    background-color:rgba(45,45,45,0.5);
+}
+tbody{
+    background-color:rgba(79,79,79,0.5);
+}
+tr>:first-child{
+    text-align: center;
+    width: 4em;
+}
+/* --------------------------------------------------------EC--------------------------------------- */
+.droite{
+    align-content: center;
+    width: 43%;
+}
+.hobbies{
+    padding-left: 3em;
+    padding-top: 3em; 
+    padding-right: 1em;
+    border:1em rgba(139,0,0,0.5) solid;
+    background-color:rgba(45,45,45,0.5);
+    margin-top: 5%;
+    height: 40%;
+    color: rgb(240,0,0);
+    border-radius: 5%; 
+}
+.sport{
+    padding-left: 1em;
+    background-color:rgba(45,45,45,0.5);
+    margin-top: 5%;
+    height: 15%;
+    border:1em rgba(139,0,0,0.5) solid;
+    color: rgb(240,0,0);
+    border-right: 10%;
+    border-radius: 5%; 
+}
+.pays{
+    padding-left: 1em;
+    background-color:rgba(45,45,45,0.5);
+    height: 20%;
+    margin-top: 3em;
+    border:1em rgba(139,0,0,0.5) solid;
+    color: rgb(240,0,0);
+    border-radius: 5%; 
+}
+.foot{
+    position: absolute;
+    margin-top: 46.5em;
+    border:transparent 1em solid;
+    text-align: center;
+    width: 97%;
+}
+.foot a{
+    padding:1ex;
+    text-decoration: none;
+    color:red;
+    background-color: black;
+    border:10px darkred solid;
+    border-radius: 50%;
+    transition: all 500ms;
+}
+.foot a:hover{
+    border:red 5px dotted;
+    box-shadow: 7px 10px 5px;
+}
+summary{
+   list-style-type: none;
+}
+button{
+    background-color: transparent;
+    text-decoration: none;
+    font-family: ANVIL,sans-serif;
+    font-size: 100%;
+    color:rgb(200,5,20);
+    border:none;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+#xp,#pays,#sport,#Ob,#lepied{
+    visibility: hidden;
+}
+#R{
+    cursor: pointer; 
+}
+#lepied,#sport,#xp,#Ob,#pays{
+    font-family: sans-serif;
+}

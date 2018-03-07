@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/form.css"/>
+    <title>Document</title>
+</head>
+<body>
+<h1>Demande d'information</h1>
+<form name="frmInfo" method="get" action="form_result.php">
+   <fieldset> 
+       <legend>Identité</legend>
+
+    <div>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required placeholder="votre nom Ici">
+        <span>*</span>
+    </div>
+       <div>
+           <label for="naiss">Date de naissance :</label>
+           <input type="date" name="naiss" id="naiss" >
+        <output id="age"></output>
+       </div>
+    <div>
+        <label for="courriel">Mail :</label>
+        <input type="email" name="courriel" id="courriel">
+    </div>  
+
+    <div>
+        <label for="phone">Tel :</label>
+        <input type="tel" name="phone" id="phone">
+    </div>
+    <div>
+        <label for="cp">Code postal :</label>
+        <input type="text" name="cp" id="cp" pattern="[0-9]{5}" maxlength="5">
+        <output id="ville">Paris</output>
+    </div>
+   </fieldset>
+   <fieldset >
+       <legend>Genre</legend>
+       <div>
+            <input type="radio" name="genre" id="fem" value="F">
+           <label for="fem">Féminin </label>
+           
+       </div>
+       <div>
+            <input type="radio" name="genre" id="masc" value="M">
+          <label for="masc">Masculin</label>
+        
+       </div>
+       <div>
+            <input type="radio" name="genre" id="neu" value="N" checked>   <!-- cheked selection par defaut -->
+           <label for="neu">Neutre </label>
+           
+       </div>
+   </fieldset>
+<fieldset>
+    <legend>Local</legend>
+    <div>
+    <label for="region">Région :</label>
+    <select name="region" id="region">
+        <option value="0">--Choisissez--</option>
+<optgroup label="Haut-de-France">
+            <option value="59">Nord</option>
+            <option value="62">Pas-de-Calais</option>
+</optgroup>
+<optgroup label="Ile-de-France">
+        <option value="93">Paris</option>
+        <option value="94">Créteil</option>
+</optgroup>
+<optgroup label="Maghreb">
+        <option value="dz">Algérie</option>
+        <option value="ma">Maroc</option>
+        <option value="tu">Tunisie</option>
+</optgroup>
+    </select>
+</div>
+    <div>
+        <label for="surface">Surface (m²) :</label>
+        <input type="number" name="surface" id="surface" min="500" max="10000" step="100">
+    </div>
+   <div>
+        <label for="budget">Budget (K€) :</label>
+        <input type="range" name="budget" id="budget" min="0" max="900" step="50" value="500" onchange="valBud.value=budget.value;">
+        <output id="valBud">100</output>
+</div> 
+</fieldset>
+<fieldset>
+    <legend>Catégories</legend>
+    <div>
+        <input type="checkbox" name="cat1" id="cat1" value="Viandes">
+        <label for="cat1">Viandes :</label>
+    
+    </div>
+    <div>
+            <input type="checkbox" name="cat2" id="cat2" value="Lait">
+            <label for="cat2">Produits laitiers :</label>
+    
+    </div>
+    <div>
+            <input type="checkbox" name="cat3" id="cat3" value="Poissons">
+            <label for="cat3">Poissons :</label>
+           
+            </div>
+            <div>
+                    <input type="checkbox" name="cat4" id="cat4" value="Fruits">
+                    <label for="cat4">Fruits et légumes :</label>
+                    
+                    </div>
+                    <div>
+                            <input type="checkbox"  id="tous" >
+                            <label for="tous">Tous/aucun :</label>
+                          
+                            </div>                   
+</fieldset>
+
+<fieldset>
+    <legend>Logistique</legend>
+<div>
+    <label for="ouvert">Ouverture :</label>
+    <select name="ouvert" id="ouvert" size="7" multiple> <!-- pour mettre afficher les jours de la semaien -->
+       <option value="1" >Lundi</option>
+       <option value="2" >Mardi</option>
+       <option value="3" >Mercredi</option>
+       <option value="4" >Jeudi</option>
+       <option value="5" >Vendredi</option>
+       <option value="6" >Samedi</option>
+       <option value="0" >Dimanche</option>
+
+    </select>
+</div>
+<div>
+    <label for="mp">Mode de paiement :</label>
+    <input type="text" name="mp" id="mp" list="mpList">
+    <datalist id=mpList>
+        <option value="Visa">
+       <option value="Carte AMEX">
+            <option value="MasterCard">
+                    <option value="Carte Vitale">
+                            <option value="Chèque">
+                                </datalist>
+                                </div>
+
+<div>
+    <label for="couleur">Charte :</label>
+    <input type="color" name="couleur" id="couleur">
+</div>
+   
+</fieldset>
+
+<fieldset>
+    <input type="reset" value="RAZ">
+    <input type="submit" value="Envoi">
+    <input type="button" value="cockies" id="saveCookie">
+    <input type="button" value="webStorage" id="saveWs">
+    <input type="button" value="indexDB" id="saveIDB">
+</fieldset>
+
+</form>
+<script src="js/demo_function.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>

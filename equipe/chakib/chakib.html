@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ma Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/maPage.css" />
+</head>
+<body>
+    <header id="headPage">
+        <h1 class="titre">Ma page</h1>
+        <h2>Chakib Houd</h2>
+        <img src="img/pp.jpeg" alt="avatar">
+    </header>
+
+    <section id="bodyPage">
+        <nav class="sectMenu">
+            <button id="btnXp" onclick="javascript:apparaitre('#artExperience')">Experience</button>
+            <button id="btnHob" onclick="javascript:apparaitre('#artHobbies')">Hobbies</button>
+            <button id="btnPay" onclick="javascript:apparaitre('#artPays')">Pays préferés</button>
+            <button id="btnSpo" onclick="javascript:apparaitre('#artSport')">Sport préférés</button>
+        </nav>
+        <section class="sectArticles">
+            <h2 class="titreRubrique">----- RUBRIQUE -----</h2>
+            <article class="artDesign artFalse">
+                    <!-- balise pour gerer z-index -->
+            </article>
+            <article id="artExperience" class="artDesign">
+                <h3>EXPERIENCE</h3>
+                <table class="centreArticle">
+                    <thead>
+                        </tr>
+                            <th>Entreprise/Domaine</th>
+                            <th>Déscription</th>
+                        <tr>
+                    </thead>
+                    <body>
+                        <tr>
+                            <td>X-FAB</td>
+                            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque delectus quas nisi necessitatibus dolores, recusandae ullam! Obcaecati, dolorum consectetur beatae nam consequatur veniam unde saepe quia provident, aut cumque at!</td>
+                        </tr>
+                        <tr>    
+                            <td>Taxi Parisien</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab eos consequuntur itaque hic dolorem, optio corporis distinctio cumque quaerat soluta veritatis incidunt neque ipsa molestiae nemo similique, eius pariatur!</td>
+                        </tr>
+                    </body>
+                </table>
+            </article>
+            <article id="artHobbies" class="artDesign">
+                <h3>HOBBIES</h3>
+                <ul class="centreArticle">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores dicta suscipit consectetur, aspernatur quia, necessitatibus temporibus illo blanditiis ab voluptatem corporis perspiciatis sapiente ipsum consequatur! Sunt cumque praesentium quae totam?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem necessitatibus deleniti minima odio? Fugiat accusamus minus praesentium quis, minima cum nesciunt sint autem neque quo tempore amet totam provident facilis.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, qui. Distinctio harum eos, explicabo, esse dolores molestiae consequuntur quas exercitationem ut ullam perspiciatis assumenda quam qui voluptatibus fugit, alias quo?</li>
+                </ul>
+            </article>
+            <article id="artPays" class="artDesign">
+                <h3>PAYS PREFERES</h3>
+                <dl class="centreArticle">
+                    <dt>TURQUIE</dt>
+                    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae culpa ducimus laudantium adipisci non amet quidem veritatis delectus nam quo ab facilis ex est accusamus quibusdam porro possimus, vero quos?</dd>
+                    <dt>pays-bas</dt>
+                    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse accusantium, excepturi soluta architecto voluptate ullam recusandae id autem, repellat possimus modi aperiam. Eaque delectus vitae commodi earum rerum tempora nemo?</dd>
+                    <dt>ANGLETERRE</dt>
+                    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro rerum corporis, architecto eaque nemo vitae! Repellat debitis optio provident accusantium nobis dolorem, qui eum, repellendus nam doloribus, molestias dolore quibusdam.</dd>
+                </dl>
+            </article>
+            <article id="artSport" class="artDesign">
+                   <h3>SPORT PREFERES</h3>
+                <ol class="centreArticle">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eos excepturi, magnam reprehenderit rerum qui neque culpa quisquam officiis officia ad natus iure explicabo asperiores provident, cumque atque doloremque fugiat.</li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum ducimus veniam sit sunt vero expedita ipsam quaerat possimus nobis quam fuga nisi dicta, necessitatibus dignissimos laborum. Omnis ullam odit sapiente.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quaerat reprehenderit voluptatibus explicabo, tempora quod qui iste, laboriosam assumenda consequuntur, dolore quos nulla repellendus. Non aspernatur enim dolor fugit minus?</li>
+                </ol>
+            </article>
+        </section>
+    </section>
+    <footer>
+        <h4>Contact :</h4>
+        <a href="mailto:chakibhoud.io@gmail.com">
+           <img src="img/email.png" alt="gmail" class="gmail logoDesign">
+        </a>
+        <a href="https://twitter.com/Bikach_Dev" target="_blank">
+           <img src="img/logo_twitter.png" alt="logoTwitter" class="twitter logoDesign">
+        </a>
+        <a href="https://www.facebook.com/chakib.hd.3" target="_blank">
+            <img src="img/logo_facebook.png" alt="logoFacebook" class="facebook logoDesign">
+        </a>
+        <a href="https://www.linkedin.com/in/chakib-houd-io/" target="_blank">
+            <img src="img/logo_linkedin.png" alt="logoLinkedin" class="linkeding logoDesign">
+        </a>
+    </footer>
+
+    <!-- chemin fichier javascript -->
+    <script type="text/javascript" src="js/maPage.js"></script>
+
+</body>
+</html>

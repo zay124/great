@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Amiri');
+
+
+body
+{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+body>* {
+   background-color: transparent !important;
+}
+.imgFond{
+    background-image: url('http://imppao.free.fr/images/2017/17dc_fond_ecran_voronoi_01.png');
+    background-size: cover;
+}
+
+    
+
+#header {
+    background-color:#ff0000;
+    width: 100%;
+    position: fixed;
+    top:0;
+}
+#diaporama {
+    background-color: #00ff00;
+    margin-top: 6em;
+}
+
+#metier {
+    background-color: #0000ff;
+}
+
+#multimidia {
+    background-color: #ffff00;
+}
+#pPage {
+    background-color: #00ffff;
+}
+#logo,#titre   /*  ou #entete>div */
+{
+    background-color: #555555;
+    color: #eeeeee;
+    float: left;
+         /* mise en cote à cote des blocs   pour float la boite   */
+        height: 3em;
+} 
+#menu {
+    background-color: #555555;
+    color: #eeeeee;
+    clear: both;   /* pour arreter le float de logo titre et menu*/
+    height: 2em;
+}
+
+#menu>ul{
+    list-style: none;  /* enlever les listes à puces*/
+    padding-left: 0;
+    text-align: center;
+}
+
+#menu li{
+    display: inline-block;   /*mettre une liste à puce en ligne et meme garder la prepriete de bloc*/
+    
+}
+#menu a{
+
+ background-color: #eeeeee;
+ padding: 0.5ex;
+ border: #eeeeee solid 1px;
+ border-radius: 5px;
+ margin: 0 1ex;
+ text-decoration: none;
+ color: #555555;
+ transition: all 0.8s; /*pour lorsque on survol, le temps d'affichage*/
+}
+#menu a:hover{
+    background-color: #555555;
+    color:#cccccc;
+
+}
+    
+#logo {
+    width: 25%;
+    
+}
+
+#titre {
+    width: 75%;
+    text-align: center;
+    line-height: 3em;
+    font-family: 'Amiri', 'Lora', sans-serif;
+}
+.articleMetier
+{
+    background-color: #aabbcc;
+}
+.multimidia
+{
+    background-color: #abcdef;
+}
+#diaporama
+{
+    display: flex;
+}
+#diaporama>*   /* tout les elements se trouvent dans diaporama */
+{
+    height: 10em;
+    text-align: center;
+}
+#carGauche, #carDroite
+{
+    width: 10%;
+   
+   }
+#carrosel
+{
+    width: 80%;
+    
+   
+}
+#diaporama img {
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+
+#titreMetier
+{
+    width: 100%;
+    text-align: center;
+}
+#articles
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+#articles> article
+{
+    width: 10em;
+    height: 10em;
+    margin: 1em;  /* marge exterieur*/
+    padding: 1em;  /*marge interieur*/
+    border: 1em solid #ffffff;
+    text-align: center;
+   
+   
+}
+/* #multimidia>.multimidia{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+#divVideo, #divAudio{
+    width: 10em;
+    height: 5em;
+    margin: 1em;  /* marge exterieur*/
+    /* padding: 1em;  /*marge interieur*/
+    /* border: 1em solid #ffffff;
+    text-align: center;
+    line-height: 5em;
+
+}
+
+#divVideo{
+    width: 25em;
+    height: 10em;
+    line-height: 10em;
+ } */
+#multimidia{
+    display: flex;
+
+}
+
+
+#multimidia>.multimidia{
+    width: 50%;
+    border:1ex #888888 solid;
+    margin: 10ex;
+    padding: 1ex;
+    
+}
+video
+{
+    width: 100%;
+    height: 100%;
+}
+.articleMetier>img{
+    height: 100%;
+    width: 100%;
+}

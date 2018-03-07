@@ -1,0 +1,226 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+body{
+    background-image:url('morad.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#prenom{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 0.3em solid rgb(22, 130, 138 ,0.6);
+    width: 60%;
+    position: absolute;
+    left: 8em;
+    top: 16em;
+    border-radius: 10px;
+    color: brown;
+    text-shadow: 2px 3px 4px rgb(12, 2, 2);
+    box-shadow: 2px 3px 4px rgb(12, 2, 2);
+    letter-spacing: 1em;
+    cursor: none;
+}
+#prenom a:link{
+    color:brown;
+}
+
+#prenom a:visited{
+    color:brown;
+}
+
+#prenom a:hover{
+    color:rgb(192, 127, 138);
+}
+
+#prenom a:active{
+    color:brown;
+}
+
+#prenom a{
+    text-decoration-line: none;
+}
+
+#hobbies{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    font-size: 1.2em;
+    border: 0.3em solid rgb(22, 130, 138 ,0.6);
+    width: 37%;
+    height: 8em;
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    border-radius: 8px 85px;
+    text-shadow: 2px 3px 4px rgb(12, 4, 4);
+    box-shadow: 2px 3px 4px rgb(12, 2, 2);
+    color: rgba(105, 27, 37, 0.9);
+    padding-left: 1em;
+    resize: vertical;
+    overflow: hidden;
+    cursor: row-resize;
+}
+
+#hobbies>ul:hover{
+    background-color: rgb(255, 215, 0, 0.6);
+}
+
+#hobbies>h2{
+    text-align: center;
+}
+
+#sports{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    font-size: 1.2em;
+    border: 0.3em solid rgb(22, 130, 138 ,0.6);
+    width: 37%;
+    height: 8em;
+    position: absolute;
+    left: 55%;
+    top: 1em;
+    border-radius: 85px 8px;
+    text-shadow: 2px 3px 4px rgb(15, 3, 3);
+    box-shadow: -2px 3px 4px rgb(12, 2, 2);
+    color: rgba(105, 27, 37, 0.9);
+    padding-left: 1em;
+    overflow: hidden;
+}
+
+#sports>ol:hover{
+    background-color: rgb(255, 215, 0, 0.6);
+    cursor: none;
+}
+
+#sports:hover{
+    height: 25em;
+    transition: 3s;
+}
+
+#sports>h2{
+    text-align: center;
+}
+
+#pays{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    font-size: 1.2em;
+    border: 0.3em solid rgb(22, 130, 138 ,0.6);
+    width: 40%;
+    position: absolute;
+    left: 1em;
+    top: 45em;
+    border-radius:  85px 8px;
+    width: 42%;
+    height: 12em;
+    padding: 0.3em;
+    text-shadow: 2px 3px 4px rgb(15, 5, 5);
+    box-shadow: 2px -3px 4px rgb(12, 2, 2);
+    color: rgba(105, 27, 37, 0.9);
+    padding-left: 1em;
+    resize:vertical;
+    direction: rtl;
+    overflow: hidden;
+    cursor: row-resize;
+}
+
+#pays>dl:hover{
+    background-color: rgb(255, 215, 0, 0.6);
+}
+
+#pays dl dt{
+    color: rgba(235, 227, 228, 0.9);    
+}
+
+#pays>h2{
+    text-align: center;
+}
+
+#experience{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    border: 0.3em solid rgb(22, 130, 138 ,0.6);
+    left:52%;
+    top: 45em;
+    border-radius: 8px 85px;
+    width: 42%;
+    height: 30em;
+    text-shadow: 2px 3px 4px rgb(15, 4, 4);
+    box-shadow: -2px -3px 4px rgb(12, 2, 2);
+    color: rgba(105, 27, 37, 0.9);
+    padding-left: 1em;
+    position: absolute;
+
+}
+
+table>thead>tr{
+    color: rgba(235, 227, 228, 0.9);
+    border: 3px double rgb(0, 0, 0, 0.4);
+}
+
+table>tbody>tr{
+    color: rgba(105, 27, 37, 0.9);
+    text-align: center;
+    border: 3px double rgb(0, 0, 0, 0.4);
+}
+
+table>tbody>tr:hover{
+    background-color: rgb(255, 215, 0, 0.6);
+}
+
+table{
+    height: 80%;
+    width: 90%;
+    border: 3px double rgb(0, 0, 0, 0.4);
+    border-radius: 20px;
+
+}
+
+tbody{
+    font-size: 0.9em;
+    border: 3px solid black;
+}
+
+h2{
+    color: coral;
+}
+
+dt{
+    font-variant-caps: small-caps;
+}
+
+#retour{
+    position: fixed;
+    top: 88%;
+    left: 98%;
+}
+
+#retour:hover{
+    top: 88%;
+    left: 96%;
+    cursor: pointer;
+    transition-duration: 0.75s;
+}
+#xp{
+    margin-bottom: 0;
+    margin-top: 0.5em;
+}
+ol{
+    margin-top: 10%;
+}
+
+#mail{
+    animation: mymove 2s infinite;
+    cursor: no-drop;
+}
+
+@keyframes mymove {
+    50% {text-shadow: 15px 25px 35px blue;}

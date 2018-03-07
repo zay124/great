@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Ultra');
+html{
+	width: 100%;
+	height: 100%;
+}
+body
+{
+	display: flex;
+	flex-direction: column;
+	width:100%;
+	height: 100%;
+	color: #494949; 
+	justify-content: space-around;
+	align-items: stretch;
+}
+
+#entete{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height:25%;
+	border-radius: 10%;
+	box-shadow: goldenrod 2px 2px 4px ;
+}
+#maPhoto{
+	margin: 0;
+	padding: 2px;
+}
+#maPhoto>img{
+
+	width:40%;
+	height:100%
+}
+h1{
+	margin-top: 0.5em;
+	margin-bottom: 0;
+	margin-right: 1em;
+	font-family: 'Ultra', Georgia, 'Times New Roman', Times, serif;
+	font-size: 5ex;
+}
+h2{
+	margin: 0;
+}
+section{
+	height: 60%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#art{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: goldenrod 2px 2px 4px ;
+
+}
+#sph{
+	display: flex;
+	justify-content:space-around;
+	width:100%;
+	height: 50%;
+	align-items: stretch;
+	box-shadow: red 2px 2px 4px 0;
+
+}
+#formation{
+	width:25%;
+	border-radius: 10%;
+	box-shadow: goldenrod 2px 2px 4px ;
+}
+
+.ic{
+width:2em;
+}
+.ttre{
+	text-align: center;
+}
+
+#experience{
+	width:100%;
+	height: 50%;
+	margin-top: 1em;
+	background: linear-gradient(60deg, greenyellow, palevioletred);
+	border-radius: 7%;
+}
+table,th,tr,td{
+	border:1px black solid;
+	border-collapse: collapse;
+
+}
+table tr:first-child th:first-child {
+	border-radius: 10px 0 0 0;
+}
+table tr:first-child th:last-child {
+	border-radius: 0 10px 0 0;
+}
+table tr:last-child td:first-child {
+	border-radius: 0 0 0 10px;
+}
+table tr:last-child td:last-child {
+	border-radius: 0  0 10px 0;
+}
+
+table{
+
+	height: 75%;
+	border-radius: 10px;
+}
+#pfoot{
+	margin-top: 1ex;
+	height: 25%;
+	box-shadow: goldenrod 2px 2px 4px ;
+	
+}
+#hobies,#sport,#pays{
+	width: 100%;
+}
+#pPage{
+	height:100%;
+	display: flex;
+	justify-content:  2em flex-start;
+}
+#titre{
+	text-align:left;
+	
+}

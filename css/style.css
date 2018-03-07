@@ -1,0 +1,96 @@
+body
+{
+	background-color: rgb(206, 206, 163);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1
+{
+	color: blue;
+	text-align: center;
+	text-shadow: 0px 0px 10px black;
+ 
+}
+h2
+{
+	color: rgb(68, 68, 214);
+	text-decoration:underline double black;
+}
+h2:hover {
+	box-shadow: 2px 3px 4px black;
+}
+
+dt
+{
+   font-weight: bold;
+   font-variant: small-caps;
+   letter-spacing: 0.3ex;
+}
+
+figure > img
+{
+	width: 50%;
+	height:50%;
+	box-shadow: 0 0 15px black;
+	border: solid 5px white;
+    border-radius: 100px;
+}
+
+li > ul
+{
+list-style-image:url(../img/img.png);
+}
+	  
+li ol
+{
+	color: red;
+	list-style-image: url(../img/file.png);
+}
+
+
+dt
+{
+	color: rgb(116, 67, 87);
+	
+}
+dd
+{
+	text-align: justify;
+}
+pre
+{
+	font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+div > a > img
+{
+	width: 2em;
+	height: 2em;
+}
+
+/*les selections des pseudoclase */
+ 
+table>thead>tr, table>tfoot>tr
+{
+	background-color:blue;
+	color: white;
+}
+
+table{
+	width: 50%;
+}
+table>tbody>tr:nth-child(odd)
+{
+background-color:darkturquoise;
+}
+table>tbody>tr>td:hover
+{
+	background-color: gold;
+	cursor: pointer;
+}
+
+[id]
+{
+	color: chartreuse;
+}
+

@@ -1,0 +1,23 @@
+label{
+    display: inline-block;
+    font-weight: bold;
+    text-align:right;
+    width: 25%;
+}
+
+form{
+    width: 90%;
+    margin: 0 auto;
+}
+fieldset:last-child{
+    border: none;
+    text-align: center;
+}
+
+fieldset:not(:last-child){
+    background-color: beige;
+}
+
+input + span {
+    color: red;
+}
