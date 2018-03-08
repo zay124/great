@@ -9,10 +9,10 @@ body
     width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
-
+ 
 body>* {
    background-color: transparent !important;
-}
+}  
 .imgFond{
     background-image: url('http://imppao.free.fr/images/2017/17dc_fond_ecran_voronoi_01.png');
     background-size: cover;
