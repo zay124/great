@@ -41,11 +41,53 @@ var naiss = document.getElementById('naiss');
    // ecrire une fonction qui transfert le coutenu de form en JSON 
    function toJSON() {
        //ecrire tableau de input ayant un attribu name
-       var inputs = document.querySelectorAll('input[name]');
+       var inputs = document.querySelectorAll('[name]');
        // objet qui va contenir les elements du formulaire
        var objet = {};
        for (var i=0; i< inputs.length; i++){
-           objet[inputs[i].name] = inputs[i].value;
+           //selon le type d'input 
+           console.log(inputs[i].type);
+           switch (inputs[i].type) {
+              // si radio ou checkbox   
+            case 'radio':
+            case 'checkbox':
+                if (inputs[i].checked){
+                    
+               objet[inputs[i].name] = inputs[i].value;
+              
+                  }
+             break;
+               // si select-multiple
+               case 'select-multiple':
+                var opts=[];
+               var jours = document.querySelectorAll('#'+inputs[i].id+'>option');
+               for (var j=0;j<jours.length;j++){
+                      if (jours[j].selected){
+                          opts.push(jours[j].value);
+                      }
+               }
+               objet[inputs[i].name]= opts;
+               break;
+               //sinon
+               default:
+               objet[inputs[i].name] = inputs[i].value;
+           }
+           
        }
        return objet;
    }
+
+  /* var stock = document.getElementById("saveWs");
+   stock.onclick = function(){
+    var result = toJSON();
+    var valeur = JSON.stringify(result)
+    var webstorage = sessionStorage.setItem('formContent', valeur) ; 
+    return webstorage;    
+};*/
+
+// attache l'évenement click au bouton saveWs
+    document.getElementById('saveWs').onclick = function(){
+        localStorage.setItem('formContent',JSON.stringify(toJSON()));
+      location.href = 'index.html';
+    };
+  
