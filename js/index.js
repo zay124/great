@@ -15,19 +15,27 @@ window.onload= function(){
 // fonction qui gère l'entree de la souris sur la zone de l'image
 function creerPrev(evt){
      // creer un la volet un div 
-     var prev = document.createElement('div')
+     var prev = document.createElement('div');
        prev.id = 'preview';
        prev.style.position = 'absolute';
        prev.style.left=(evt.pageX + 10 ) + 'px';
        prev.style.top=(evt.pageY + 10) + 'px';
-       prev.style.width = '300px';
-       prev.style.height = '100px';
+       prev.style.width = '200px';
+       prev.style.height = '150px';
        prev.style.zIndex = '999';
-       prev.style.backgroundColor = 'red !important';
+       //prev.style.backgroundColor = 'red !important';
        prev.style.border = 'black solid 1px';
-       prev.textContent =evt.target.nextSibling.href;
        // Rattache au doc
        document.body.appendChild(prev);
+       // créer à la volée un IFRAME
+       var vue = document.createElement('iframe');
+       vue.src = evt.target.nextSibling.href
+       vue.frameBoder =0;
+       vue.style.backgroundColor ='white';
+       prev.appendChild(vue);
+    //    prev.textContent =evt.target.nextSibling.href;
+    
+     
 
 }
 

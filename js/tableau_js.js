@@ -1,7 +1,10 @@
 // variable global
 var contacts = ["Gaja","Stalyne","Souheila","Yasmina",
-"Widad","Emellie","Romain","Christian",
+"Widad","Emilie","Romain","Christian",
 "Aissa","Djamel","Morad","Tsune","Aurelien","Lyslie"];
+contacts.push('Chakib');
+contacts.unshift('Mihaela');
+contacts.sort();
 
 
 /*function showContacts(){   

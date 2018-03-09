@@ -1,0 +1,21 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+div {
+    margin: 10px;
+}
+
+#titre {
+  color: red;   
+  text-align: center; 
+}
+
+
+
+#carte {
+    width: 640px;
+    height: 480px;
+    border: 1px solid black;
+}
