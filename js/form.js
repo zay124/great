@@ -91,3 +91,21 @@ var naiss = document.getElementById('naiss');
       location.href = 'index.html';
     };
   
+
+//attache l'event blur a l'input CP
+document.getElementById('cp').addEventListener('blur', getVille, true);
+
+function getVille(){
+    var xhr = new XMLHttpRequest;
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState == 4 && xhr.status == 200) {
+        var rep = JSON.parse(xhr.responseText);
+        document.getElementById('ville').value = rep['places'][0]['place name'];
+    
+    
+        };
+    };
+    xhr.open('get', 'http://www.zippopotam.us/fr/' + document.getElementById('cp').value, true);
+    xhr.send();
+}
+
