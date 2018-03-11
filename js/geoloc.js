@@ -30,7 +30,7 @@ function affiche(){
         center : pos,
         zoom : 16,
         scrollWheel : false,
-        mapTypeId : google.maps.MapTypeId.TERRAIN // ROADMPAS, SATELLITE, HYBRID
+        mapTypeId : google.maps.MapTypeId.SATELLITE //TERRAIN // ROADMPAS, SATELLITE, HYBRID
     };
 
     // affiche la carte 
