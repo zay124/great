@@ -103,7 +103,13 @@ function getVille(){
         document.getElementById('ville').value = rep['places'][0]['place name'];
     
     
-        };
+        }
+        else if (xhr.status == 404){
+            document.getElementById('ville').style.color = 'red';
+            document.getElementById('ville').value = 'cp introuvable';
+        } else {
+            return true;
+        }
     };
     xhr.open('get', 'http://www.zippopotam.us/fr/' + document.getElementById('cp').value, true);
     xhr.send();
